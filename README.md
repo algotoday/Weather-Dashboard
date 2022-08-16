@@ -18,7 +18,7 @@
 
 - API 
 
-Screenshot 
+## Installation
 ![SSWDB](https://user-images.githubusercontent.com/100335717/184803463-03a42f08-3b76-4f77-abc0-466f6d81a3d3.png)
 
 
