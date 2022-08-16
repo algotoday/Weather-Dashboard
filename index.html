@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="page-title text-light w-100 text-center py-2 mb-3">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class="container ml-0 mr-0 w-100">
+            <div class="row vw-100">
+
+                <div class="col-12 col-lg-4">
+                    <h2 class="font-weight-bold text-dark">Search for a City:</h2>
+                    <form id="user-form" class="user-form">
+                        <input name="city" id="city" type="text" class="form-input" placeholder="San Diego"/>
+                        <button type="submit" id='city-search' class="btn mb-3">Search</button>
+                    </form>
+                    <div id="recommended-cities" class="mt-4">
+                        <button id="city-0" class="bg-secondary btn w-100 mb-4">Austin</button>
+                        <button id="city-1" class="bg-secondary btn w-100 mb-4">Chicago</button>
+                        <button id="city-2" class="bg-secondary btn w-100 mb-4">New York</button>
+                        <button id="city-3" class="bg-secondary btn w-100 mb-4">Orlando</button>
+                        <button id="city-4" class="bg-secondary btn w-100 mb-4">San Fansisco</button>
+                        <button id="city-5" class="bg-secondary btn w-100 mb-4">Seattle</button>
+                        <button id="city-6" class="bg-secondary btn w-100 mb-4">Denver</button>
+                        <button id="city-7" class="bg-secondary btn w-100 mb-4">Atlanta</button>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-8 w-100">
+                    <div id="current-day-weather" class="border border-secondary pl-3 pt-1">
+                        <div class="row">
+                            <h2 id="city-name" class="font-weight-bold text-dark pt-3 pl-3"></h2>
+                            <img id="weather-icon"></img>
+                        </div>
+                        <p id="temp"></p>
+                        <p id="wind"></p>
+                        <p id='humidity'></p>
+                        <div class="row">
+                            <p class="ml-2" id="uv-index-name"></p>
+                            <a id="uv-index" class="text-light rounded uv-index ml-2 px-1 text-center pt-1"></a>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="font-weight-bold text-dark mt-3">5 Day Forecast:</h2>
+                        <div id='five-day-forcast' class="w-100 d-flex justify-content-between"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
