@@ -25,11 +25,3 @@
 
 ## Deployed
 https://algotoday.github.io/Weather-Dashboard/
-
-
-
-
-
-
-
-
